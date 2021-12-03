@@ -1,5 +1,6 @@
 import React from "react";
 import CardTemp from "./CardTemp";
+import PropTypes from "prop-types";
 
 export default function Card(props) {
   // acá va tu código
@@ -19,5 +20,12 @@ export default function Card(props) {
     </>
   );
 }
-
-
+//es una buena practica ver en la consola del browser el tipo de datos que nos llegan; 
+//por que tienen que se igual a las que necesitan nuestras funciones para no romper codigo
+Card.propTypes = {
+  max: PropTypes.number,
+  min: PropTypes.number,
+  name: PropTypes.string,
+  img: PropTypes.string,
+  onClose: PropTypes.func,
+};
