@@ -1,0 +1,14 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* esta es la separacion que hay entre cards */
+}
+/* una forma de hacer funciones aqui preguntamos que si la pantalla minima: 
+1) mayor a 576px -> las card tiene que estar una a lado de otra. 
+2) menor a 576px las card tiene que esta una encima de otra columna   */
+@media screen and (min-width: 576px) {
+  .cards {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
