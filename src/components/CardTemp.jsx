@@ -1,9 +1,10 @@
+import styles from "./CardTemp.module.css";
 function CardTemp({ label, value }) {
-    return (
-      <div>
-        <label>{label}</label>
-        <span>{value}</span>
-      </div>
-    );
-  }
-  export default CardTemp
+  return (
+    <div className={styles.cardTemp}>
+      <label>{label}</label>
+      <span>{value}</span>
+    </div>
+  );
+}
+export default CardTemp;
